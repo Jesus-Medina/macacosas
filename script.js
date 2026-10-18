@@ -63,7 +63,7 @@ function openProduct(card) {
   const photo = card.querySelector('.product-media img');
   modalImage.src = photo.currentSrc || photo.src;
   modalImage.alt = photo.alt;
-  modalImage.onerror = () => { modalImage.onerror = null; modalImage.src = photo.dataset.fallback || photo.dataset.fallback || ''; };
+  modalImage.onerror = () => { modalImage.onerror = null; modalImage.src = photo.dataset.fallback || ''; };
   modalTitle.textContent = product.title;
   modalCategory.textContent = product.category;
   modalDescription.textContent = product.description;
