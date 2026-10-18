@@ -2,6 +2,17 @@
 
 Landing page responsive para presentar una primera propuesta de vitrina digital de Macacosas en el curso de Ingeniería de Software.
 
+## Publicar con GitHub Pages
+
+El repositorio está preparado para alojarse como sitio estático sin proceso de compilación.
+
+1. Abre [Settings → Pages](https://github.com/Jesus-Medina/macacosas/settings/pages).
+2. En **Build and deployment**, elige **Deploy from a branch**.
+3. Selecciona la rama **main**, carpeta **/(root)**, y guarda con **Save**.
+4. GitHub mostrará el estado de publicación y el enlace del sitio. La dirección esperada es https://jesus-medina.github.io/macacosas/ (solo funcionará una vez activado Pages).
+
+Las actualizaciones a `main` se publicarán automáticamente después de esta configuración. Este es un **prototipo académico**, no el sitio oficial validado por la clienta.
+
 ## Cómo verla
 
 1. Abre la URL de GitHub Pages publicada en **Settings → Pages**.
