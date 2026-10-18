@@ -10,7 +10,7 @@ const products = [
   { title: 'Hecho de momentos', category: 'MOMENTOS', description: 'Una idea inspirada en el oficio y el valor de las cosas creadas con dedicación.' }
 ];
 
-// Fallbacks locales: el sitio sigue mostrando imágenes si no hay conexión.
+// Respaldo visual integrado para imágenes externas.
 document.querySelectorAll('img[data-fallback]').forEach(img => {
   img.addEventListener('error', () => {
     const fallback = img.dataset.fallback;
@@ -63,9 +63,9 @@ function openProduct(card) {
   const photo = card.querySelector('.product-media img');
   modalImage.src = photo.currentSrc || photo.src;
   modalImage.alt = photo.alt;
-  modalImage.onerror = () => { modalImage.onerror = null; modalImage.src = photo.dataset.fallback || 'assets/candle-illustration.svg'; };
+  modalImage.onerror = () => { modalImage.onerror = null; modalImage.src = photo.dataset.fallback || photo.dataset.fallback || ''; };
   modalTitle.textContent = product.title;
-  modalCategory.textContent = product.category + ' / EJEMPLO';
+  modalCategory.textContent = product.category;
   modalDescription.textContent = product.description;
   if (typeof modal.showModal === 'function') modal.showModal();
 }
