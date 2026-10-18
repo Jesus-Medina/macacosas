@@ -1,79 +1,24 @@
-# Macacosas — prototipo académico de sitio web
+# Macacosas — sitio web
 
-Landing page responsive para presentar una primera propuesta de vitrina digital de Macacosas en el curso de Ingeniería de Software.
+Sitio estático responsive de Macacosas. Incluye portada, sección de inspiración, navegación por categorías, información de contacto y enlace a [Instagram](https://www.instagram.com/macacosas._/).
 
-## Publicar con GitHub Pages
+## Archivos
+- `index.html`: estructura y contenido.
+- `styles.css`: estilos, diseño responsive.
+- `script.js`: navegación, filtros, detalles de imágenes.
+- `assets/logo-macacosas.svg`: emblema **recreado provisionalmente** a partir de la imagen de perfil compartida; reemplazar por el logo original cuando esté disponible como archivo publicable.
 
-El repositorio está preparado para alojarse como sitio estático sin proceso de compilación.
+## Publicación
+1. Abrir [Settings → Pages](https://github.com/Jesus-Medina/macacosas/settings/pages).
+2. Seleccionar **Deploy from a branch**, rama `main`, directorio `/(root)`.
+3. Guardar la configuración y comprobar la URL que muestra GitHub.
 
-1. Abre [Settings → Pages](https://github.com/Jesus-Medina/macacosas/settings/pages).
-2. En **Build and deployment**, elige **Deploy from a branch**.
-3. Selecciona la rama **main**, carpeta **/(root)**, y guarda con **Save**.
-4. GitHub mostrará el estado de publicación y el enlace del sitio. La dirección esperada es https://jesus-medina.github.io/macacosas/ (solo funcionará una vez activado Pages).
+Cuando Pages esté activado, la URL habitual es https://jesus-medina.github.io/macacosas/.
 
-Las actualizaciones a `main` se publicarán automáticamente después de esta configuración. Este es un **prototipo académico**, no el sitio oficial validado por la clienta.
+## Pendientes de contenido (equipo responsable)
+- Las fotografías que aparecen actualmente son imágenes de ambientación de terceros y **no pertenecen a Macacosas**. Reemplazarlas por fotos de la clienta antes de usar el sitio como catálogo comercial.
+- Las seis fichas son **ideas temáticas**: no son productos, precios, stock ni modelos confirmados de Macacosas.
+- El logo del sitio es una recreación provisional; reemplazar por el PNG original entregado.
+- Confirmar con Macarena textos de marca, métodos de compra, disponibilidad, datos de contacto y permisos de uso de las fotografías antes del lanzamiento comercial.
 
-## Cómo verla
-
-1. Abre la URL de GitHub Pages publicada en **Settings → Pages**.
-2. Para ejecución local, abre `index.html` en Chrome, Firefox o Edge.
-3. Prueba el menú, filtros, tarjetas y enlace a Instagram.
-
-No necesita instalar Node ni levantar un servidor; es HTML, CSS y JavaScript nativos.
-
-## Qué funciona
-
-- Diseño móvil y escritorio.
-- Navegación por secciones y menú móvil.
-- Filtro funcional de 6 tarjetas conceptuales.
-- Modal para ver la idea de cada tarjeta.
-- Botones de contacto que llevan al Instagram indicado.
-- Ilustraciones SVG de respaldo integradas en el HTML si las fotografías no cargan.
-- Soporte de navegación por teclado, textos alternativos y reducción de movimiento.
-
-## Importante: qué es provisional
-
-- **No es un sitio oficial ni una tienda real.** Es una propuesta preliminar de diseño para revisar con la clienta.
-- **Los productos de ejemplo no son un inventario real.** Los nombres, descripciones, filtros y textos comerciales son ilustrativos.
-- **Las fotografías NO proceden de Instagram de Macacosas.** El sitio usa fotografías de referencia descargadas por el navegador desde Pexels y dibujos SVG locales como respaldo. No deben presentarse como trabajos de Macarena.
-- **No se inventaron precios, stock, envíos, medios de pago, WhatsApp ni ingredientes.** La venta se remite al perfil de Instagram conocido.
-- El logotipo tipográfico propuesto es provisional: se reemplazará por el logo original o el que apruebe Macarena.
-- El sitio no tiene base de datos, carrito, autenticación, checkout ni integración automática con Instagram.
-
-## Información pública que orientó la propuesta
-
-- Instagram: https://www.instagram.com/macacosas._/
-- Resultados públicos indexados de Instagram mencionan velitas, regalos aromáticos y actividades en ferias.
-- Publicaciones municipales registran a Macacosas entre los emprendimientos seleccionados para ferias de Las Condes.
-
-## Fotos de referencia (Pexels)
-
-Estas imágenes se muestran solo como **referencias visuales**, no como fotos de la marca:
-
-- https://www.pexels.com/photo/jar-of-aromatic-candle-with-small-bottle-of-essential-oil-arranged-on-table-6738809/
-- https://www.pexels.com/photo/scented-candle-in-a-glass-jar-on-the-wooden-table-5499310/
-- https://www.pexels.com/photo/decorative-shapes-of-candles-11622095/
-- https://www.pexels.com/photo/a-candle-near-dried-flowers-6755744/
-- https://www.pexels.com/photo/candles-with-flowers-in-pastel-shades-18481413/
-- https://www.pexels.com/photo/white-and-beige-cubes-10842090/
-- https://www.pexels.com/photo/person-making-artisan-candles-7233956/
-- https://www.pexels.com/photo/person-making-artisan-candles-7233960/
-
-Comprueba las licencias y permisos antes de publicar contenidos y sustituye las fotos por el material de Macarena con autorización.
-
-## Preguntas clave para levantar requisitos
-
-- ¿Qué espera conseguir con una web: visibilidad, catálogo, pedidos, cotizaciones, tienda online o reservas para eventos?
-- ¿Qué productos y categorías realmente vende? ¿Hay personalizados, lotes o regalos para empresas?
-- ¿Tiene logo, paleta de colores, fotos autorizadas, textos y precios?
-- ¿Por qué canal llegan las ventas hoy? ¿Quiere WhatsApp, formulario, carrito o pago online?
-- ¿Cuáles son las condiciones de entrega, tiempos de producción, cambios y despacho?
-- ¿Quién actualizará fotos, productos, disponibilidad y precios?
-
-## Editar el prototipo
-
-- Marca, estructura y textos: `index.html`.
-- Estilos, variables de color y breakpoints: `styles.css`.
-- Catálogo de la ventana emergente, filtros y comportamiento: `script.js`.
-- Ilustraciones SVG de respaldo: codificadas en `data-fallback` de `index.html` para evitar rutas rotas.
-- Las URLs de imágenes de Pexels están en los atributos `src` del HTML; reemplázalas cuando tengas fotografías de la clienta.
+Estas notas se mantienen **solo en el repositorio para el equipo que mantiene la página**, no aparecen en el sitio visible al público.
